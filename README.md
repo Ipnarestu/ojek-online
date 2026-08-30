@@ -26,24 +26,25 @@
 ## Instalasi
 
 # 1. Clone Repository
-#bash
+bash
 git clone https://github.com/username/ojek-mitra-mahasiswa.git
 cd ojek-mitra-mahasiswa
 
 2. Install Dependencies PHP
-bash
+   
 composer install
 
-3. Buat File Environment
-bash
+4. Buat File Environment
+
 copy .env.example .env
 
 4. Generate Application Key
-bash
+
 php artisan key:generate
 
-5. Konfigurasi Database
+6. Konfigurasi Database
 Buka file .env dan sesuaikan:
+
 .env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -52,25 +53,24 @@ DB_DATABASE=ojek_mitra_mahasiswa
 DB_USERNAME=root
 DB_PASSWORD=
 
-6. Install Laravel Sanctum
-bash
+7. Install Laravel Sanctum
+   
 composer require laravel/sanctum
 php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 
-7. Jalankan Migration
-bash
+9. Jalankan Migration
+
 php artisan migrate
 
-8. Setup Storage Link
-bash
+10. Setup Storage Link
+    
 php artisan storage:link
 
-9. Jalankan Seeder (Opsional)
-bash
+12. Jalankan Seeder (Opsional)
+
 php artisan db:seed
 
-10. Jalankan Server
-m
-bash
+13. Jalankan Server
+
 php artisan serve
 Akses aplikasi di: http://localhost:80
