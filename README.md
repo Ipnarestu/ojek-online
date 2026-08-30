@@ -46,11 +46,17 @@ php artisan key:generate
 Buka file .env dan sesuaikan:
 
 .env
+
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
-DB_DATABASE=ojek_mitra_mahasiswa
+
+DB_DATABASE=nama_database
+
 DB_USERNAME=root
+
 DB_PASSWORD=
 
 7. Install Laravel Sanctum
@@ -73,4 +79,5 @@ php artisan db:seed
 13. Jalankan Server
 
 php artisan serve
+
 Akses aplikasi di: http://localhost:80
